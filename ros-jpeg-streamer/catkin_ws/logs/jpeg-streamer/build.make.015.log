@@ -1,0 +1,4 @@
+[35m[1mScanning dependencies of target jpeg-streamer_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/jpeg-streamer_node.dir/src/jpeg-streamer_node.cpp.o[0m
+[100%] [32m[1mLinking CXX executable /usr/local/catkin_ws/devel/.private/jpeg-streamer/lib/jpeg-streamer/jpeg-streamer_node[0m
+[100%] Built target jpeg-streamer_node

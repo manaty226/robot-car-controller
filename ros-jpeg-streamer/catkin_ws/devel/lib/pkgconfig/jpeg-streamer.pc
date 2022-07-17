@@ -1,0 +1,1 @@
+/usr/local/catkin_ws/devel/.private/jpeg-streamer/lib/pkgconfig/jpeg-streamer.pc

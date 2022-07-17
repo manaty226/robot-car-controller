@@ -1,0 +1,71 @@
+version: '3'
+
+services:
+  # ros-bridge:
+  #   build: 
+  #     context: ./ros-bridge
+  #     dockerfile: Dockerfile
+  #   container_name: ros-bridge
+  #   tty: true
+  #   networks:
+  #     - ros-net
+  lidar-mapper:
+    build: 
+      context: ./lidar-mapper
+      dockerfile: Dockerfile
+    container_name: lidar-mapper
+    tty: true
+    networks:
+      - ros-net
+    
+
+  ros-master:
+    build:
+      context: ./ros-master
+      dockerfile: Dockerfile
+    container_name: ros-master
+    tty: true
+    networks:
+      - ros-net
+    ports:
+      - 11311:11311
+
+  react-ros:
+    build:
+      context: ./react-controller
+      dockerfile: Dockerfile  
+    container_name: react-ros
+    volumes:
+      - ./react-controller/react-ros-controller:/usr/src
+    tty: true
+    networks:
+      - ros-net
+
+  jpeg-streamer:
+    build:
+      context: ./ros-jpeg-streamer
+      dockerfile: Dockerfile
+    container_name: jpeg-streamer
+    volumes:
+        - ./ros-jpeg-streamer/catkin_ws:/usr/local/catkin_ws
+    tty: true
+    environment: 
+      ROS_MASTER_URI: ${ROS_MASTER_URI}
+    networks:
+      - ros-net
+
+  proxy:
+    image: nginx:latest
+    container_name: react-proxy
+    volumes:
+      - ./nginx/config/default.conf:/etc/nginx/conf.d/default.conf
+    networks: 
+      - ros-net
+    ports:
+      - 80:80
+    extra_hosts:
+      - "ros-bridge:192.168.10.118"
+
+networks:
+  ros-net:
+  

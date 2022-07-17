@@ -1,0 +1,6 @@
+jpeg-streamer
+/usr/local/catkin_ws/devel/.private/jpeg-streamer/cmake.lock /usr/local/catkin_ws/devel/./cmake.lock
+/usr/local/catkin_ws/devel/.private/jpeg-streamer/lib/jpeg-streamer/jpeg-streamer_node /usr/local/catkin_ws/devel/lib/jpeg-streamer/jpeg-streamer_node
+/usr/local/catkin_ws/devel/.private/jpeg-streamer/lib/pkgconfig/jpeg-streamer.pc /usr/local/catkin_ws/devel/lib/pkgconfig/jpeg-streamer.pc
+/usr/local/catkin_ws/devel/.private/jpeg-streamer/share/jpeg-streamer/cmake/jpeg-streamerConfig-version.cmake /usr/local/catkin_ws/devel/share/jpeg-streamer/cmake/jpeg-streamerConfig-version.cmake
+/usr/local/catkin_ws/devel/.private/jpeg-streamer/share/jpeg-streamer/cmake/jpeg-streamerConfig.cmake /usr/local/catkin_ws/devel/share/jpeg-streamer/cmake/jpeg-streamerConfig.cmake

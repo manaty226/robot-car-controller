@@ -1,0 +1,1 @@
+/usr/local/catkin_ws/devel/.private/jpeg-streamer/share/jpeg-streamer/cmake/jpeg-streamerConfig-version.cmake

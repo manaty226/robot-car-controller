@@ -1,0 +1,8 @@
+prefix=/usr/local/catkin_ws/install
+
+Name: jpeg-streamer
+Description: Description of jpeg-streamer
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
